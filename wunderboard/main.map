@@ -1,0 +1,423 @@
+Archive member included because of file (symbol)
+
+C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                              C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o (exit)
+C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800100         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+LOAD main.o
+LOAD adc.o
+LOAD C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a
+LOAD C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a
+LOAD C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x37c
+ *(.vectors)
+ .vectors       0x00000000       0x98 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+                0x00000098                __ctors_start = .
+ *(.ctors)
+                0x00000098                __ctors_end = .
+                0x00000098                __dtors_start = .
+ *(.dtors)
+                0x00000098                __dtors_end = .
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000098                . = ALIGN (0x2)
+ *(.init0)
+ .init0         0x00000098        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+                0x00000098                __init
+ *(.init1)
+ *(.init2)
+ .init2         0x00000098        0xc C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+ *(.init3)
+ *(.init4)
+ .init4         0x000000a4       0x16 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                0x000000a4                __do_copy_data
+ *(.init5)
+ *(.init6)
+ *(.init7)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000ba        0x8 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+ *(.text)
+ .text          0x000000c2        0x4 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+                0x000000c2                __vector_22
+                0x000000c2                __vector_28
+                0x000000c2                __vector_1
+                0x000000c2                __vector_32
+                0x000000c2                __vector_34
+                0x000000c2                __vector_24
+                0x000000c2                __vector_12
+                0x000000c2                __bad_interrupt
+                0x000000c2                __vector_6
+                0x000000c2                __vector_31
+                0x000000c2                __vector_35
+                0x000000c2                __vector_3
+                0x000000c2                __vector_23
+                0x000000c2                __vector_30
+                0x000000c2                __vector_25
+                0x000000c2                __vector_11
+                0x000000c2                __vector_13
+                0x000000c2                __vector_17
+                0x000000c2                __vector_19
+                0x000000c2                __vector_7
+                0x000000c2                __vector_27
+                0x000000c2                __vector_5
+                0x000000c2                __vector_33
+                0x000000c2                __vector_37
+                0x000000c2                __vector_4
+                0x000000c2                __vector_9
+                0x000000c2                __vector_2
+                0x000000c2                __vector_21
+                0x000000c2                __vector_15
+                0x000000c2                __vector_36
+                0x000000c2                __vector_29
+                0x000000c2                __vector_8
+                0x000000c2                __vector_26
+                0x000000c2                __vector_14
+                0x000000c2                __vector_10
+                0x000000c2                __vector_16
+                0x000000c2                __vector_18
+                0x000000c2                __vector_20
+ .text          0x000000c6      0x26e main.o
+                0x0000019e                clearArray
+                0x000000c6                InitializeUART
+                0x0000017e                SPI_MasterRecieve
+                0x0000010a                SendStringUART
+                0x0000013e                checkTIMER0
+                0x00000130                initializeTIMER0
+                0x0000016a                SPI_MasterInit
+                0x000001b4                main
+                0x0000014c                setTIMER0
+                0x000000f4                SendByteUART
+                0x00000174                SPI_MasterTransmit
+                0x0000018a                initialize
+ .text          0x00000334       0x44 adc.o
+                0x00000334                read_adc
+ .text          0x00000378        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text          0x00000378        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                0x00000378                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00000378        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000378        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                0x00000378                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000378        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                0x00000378                exit
+                0x00000378                _exit
+ *(.fini8)
+ *(.fini7)
+ *(.fini6)
+ *(.fini5)
+ *(.fini4)
+ *(.fini3)
+ *(.fini2)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000378        0x4 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                0x0000037c                _etext = .
+
+.trampolines    0x0000037c        0x0
+ .trampolines   0x0000037c        0x0 linker stubs
+
+.data           0x00800100       0x50 load address 0x0000037c
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+ .data          0x00800100       0x4f main.o
+                0x0080014e                cData
+ .data          0x0080014f        0x0 adc.o
+ .data          0x0080014f        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .data          0x0080014f        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ *(.gnu.linkonce.d*)
+                0x00800150                . = ALIGN (0x2)
+ *fill*         0x0080014f        0x1 00
+                0x00800150                _edata = .
+                0x00800150                PROVIDE (__data_end, .)
+
+.bss            0x00800150        0x0 load address 0x000003cc
+                0x00800150                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800150        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+ .bss           0x00800150        0x0 main.o
+ .bss           0x00800150        0x0 adc.o
+ .bss           0x00800150        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .bss           0x00800150        0x0 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ *(COMMON)
+                0x00800150                PROVIDE (__bss_end, .)
+                0x0000037c                __data_load_start = LOADADDR (.data)
+                0x000003cc                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800150        0x0
+                0x00800150                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800150                PROVIDE (__noinit_end, .)
+                0x00800150                _end = .
+                0x00800150                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x40
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 adc.o
+
+.debug_pubnames
+                0x00000000      0x10c
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xed main.o
+ .debug_pubnames
+                0x000000ed       0x1f adc.o
+
+.debug_info     0x00000000      0x6c7
+ *(.debug_info)
+ .debug_info    0x00000000      0x627 main.o
+ .debug_info    0x00000627       0xa0 adc.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x282
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x216 main.o
+ .debug_abbrev  0x00000216       0x6c adc.o
+
+.debug_line     0x00000000      0x62b
+ *(.debug_line)
+ .debug_line    0x00000000      0x547 main.o
+ .debug_line    0x00000547       0xe4 adc.o
+
+.debug_frame    0x00000000       0xf0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xd0 main.o
+ .debug_frame   0x000000d0       0x20 adc.o
+
+.debug_str      0x00000000      0x1e1
+ *(.debug_str)
+ .debug_str     0x00000000      0x1a9 main.o
+                                0x1e8 (size before relaxing)
+ .debug_str     0x000001a9       0x38 adc.o
+                                 0xab (size before relaxing)
+
+.debug_loc      0x00000000      0x245
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x21f main.o
+ .debug_loc     0x0000021f       0x26 adc.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(main.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x168
+ .debug_ranges  0x00000000      0x168 main.o
+
+Cross Reference Table
+
+Symbol                                            File
+InitializeUART                                    main.o
+SPI_MasterInit                                    main.o
+SPI_MasterRecieve                                 main.o
+SPI_MasterTransmit                                main.o
+SendByteUART                                      main.o
+SendStringUART                                    main.o
+__bad_interrupt                                   C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__data_end                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+__data_start                                      C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+__do_copy_data                                    C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                                                  main.o
+__heap_end                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__init                                            C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__stack                                           C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_1                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_10                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_11                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_12                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_13                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_14                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_15                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_16                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_17                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_18                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_19                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_2                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_20                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_21                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_22                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_23                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_24                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_25                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_26                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_27                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_28                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_29                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_3                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_30                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_31                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_32                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_33                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_34                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_35                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_36                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_37                                       C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_4                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_5                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_6                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_7                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_8                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_9                                        C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vector_default                                  C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+__vectors                                         C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+_exit                                             C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+cData                                             main.o
+checkTIMER0                                       main.o
+clearArray                                        main.o
+exit                                              C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                                                  C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+initialize                                        main.o
+initializeTIMER0                                  main.o
+main                                              main.o
+                                                  C:/Portable/WinAVR-20090313/lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtusb647.o
+read_adc                                          adc.o
+setTIMER0                                         main.o
