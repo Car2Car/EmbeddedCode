@@ -112,33 +112,38 @@ unsigned char setTIMER0(unsigned char clock, unsigned char count)
 
 void ANT_Init(void)
 {
-    BYTE xdata regValues[] = {1,2,3}; 
-    char regdata[2][50];
+    //BYTE xdata regValues[] = {1,2,3}; 
+    BYTE xdata regdata[21][2];
     // Register Address | Register Value
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
-    regdata[0][0]=; regdata[1][0]=;
+    regdata[0][0]=0x0002; regdata[0][1]=0x06;
+    regdata[1][0]=0x0003; regdata[1][1]=0x47;
+    regdata[2][0]=0x0008; regdata[2][1]=0x05;
+    regdata[3][0]=0x000B; regdata[3][1]=0x06;
+    regdata[4][0]=0x000D; regdata[4][1]=0x10;
+    regdata[5][0]=0x000E; regdata[5][1]=0xB1;
+    regdata[6][0]=0x000F; regdata[6][1]=0x3B;
+    regdata[7][0]=0x0010; regdata[7][1]=0xF6;
+    regdata[8][0]=0x0011; regdata[8][1]=0x83;
+    regdata[9][0]=0x0012; regdata[9][1]=0x13;
+    regdata[10][0]=0x0015; regdata[10][1]=0x15;
+    regdata[11][0]=0x0018; regdata[11][1]=0x18;
+    regdata[12][0]=0x0019; regdata[12][1]=0x16;
+    regdata[13][0]=0x0020; regdata[13][1]=0xFB;
+    regdata[14][0]=0x0023; regdata[14][1]=0xE9;
+    regdata[15][0]=0x0024; regdata[15][1]=0x2A;
+    regdata[16][0]=0x0025; regdata[16][1]=0x00;
+    regdata[17][0]=0x0026; regdata[17][1]=0x1F;
+    regdata[18][0]=0x002C; regdata[18][1]=0x81;
+    regdata[19][0]=0x002D; regdata[19][1]=0x35;
+    regdata[20][0]=0x002E; regdata[20][1]=0x09;
     
+    char x = 0;
     
+    for(x = 0; x < 21; x++)
+    {
+        halSpiWriteBurstReg(regdata[x][0], regdata[x][1], sizeof(regdata[x][1]));
+    }
         
-    halSpiWriteBurstReg(0x00, regValues, sizeof(regValues)); 
 }
 
 void SPI_MasterInit(void)
@@ -249,7 +254,6 @@ int main() {
                 if(sendping = 'a')
                 {
                     SPI_MasterTransmit('a');
-					//blah
                 }
                 
                 break;
